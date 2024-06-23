@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Estudiantes</title>
+    <link rel="stylesheet" href="css/Estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Estudiantes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Libros.html">Libros</a></li>
+                <li><a href="Prestamo.html">Préstamos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Agregar/Editar Estudiantes</h2>
+        <form id="form-estudiante">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" required>
+            <label for="documento">Documento de Identificación:</label>
+            <input type="text" id="documento" required>
+            <label for="programa">Programa:</label>
+            <input type="text" id="programa" required>
+            <button type="submit">Guardar</button>
+        </form>
+        <h2>Lista de Estudiantes</h2>
+        <table id="tabla-estudiantes">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Documento</th>
+                    <th>Programa</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas dinámicas -->
+            </tbody>
+        </table>
+    </main>
+    <script src="js/Estudiantes.js"></script>
+</body>
+</html>

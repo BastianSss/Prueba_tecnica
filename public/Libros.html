@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Libros</title>
+    <link rel="stylesheet" href="css/Estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Libros</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="estudiantes.html">Estudiantes</a></li>
+                <li><a href="prestamos.html">Préstamos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Agregar/Editar Libros</h2>
+        <form id="form-libro">
+            <label for="autor">Nombre Completo del Autor:</label>
+            <input type="text" id="autor" required>
+            <label for="fecha-nacimiento">Fecha de Nacimiento del Autor:</label>
+            <input type="date" id="fecha-nacimiento" required>
+            <label for="lugar-nacimiento">Lugar de Nacimiento del Autor:</label>
+            <input type="text" id="lugar-nacimiento" required>
+            <label for="nombre-libro">Nombre del Libro:</label>
+            <input type="text" id="nombre-libro" required>
+            <label for="fecha-publicacion">Fecha de Publicación:</label>
+            <input type="date" id="fecha-publicacion" required>
+            <button type="submit">Guardar</button>
+        </form>
+        <h2>Lista de Libros</h2>
+        <table id="tabla-libros">
+            <thead>
+                <tr>
+                    <th>Autor</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Lugar de Nacimiento</th>
+                    <th>Nombre del Libro</th>
+                    <th>Fecha de Publicación</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas dinámicas -->
+            </tbody>
+        </table>
+    </main>
+    <script src="js/libros.js"></script>
+</body>
+</html>
+
